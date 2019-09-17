@@ -1,0 +1,7 @@
+- name: Home
+  link: /
+  icon: fa fa-linkedin
+- name: About
+  link: /
+  icon: fa fa-github
+

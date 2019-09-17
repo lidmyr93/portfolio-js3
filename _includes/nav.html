@@ -1,0 +1,24 @@
+<nav id="nav" class="nav-hidden">
+
+  <div id="burger" class="burger">
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+  </div>
+
+  <div class="navigation">
+      <div class="menu-links">
+        {% for item in site.data.nav %}
+        <span>
+          <!-- <a href="{{ item.link }}" {% if page.url == item.link %}class="current-link"{% endif %}>{{ item.name }}</a> -->
+          <a href="{{item.link}}"><i class="{{item.icon}}"></i></a>
+        </span>
+        {% endfor %}
+      </div>
+      <div class="social-links ">
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-github"></i>
+      </div>
+    </div>
+
+</nav>

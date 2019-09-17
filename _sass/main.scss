@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: red;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+.burger{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burger-line{
+    background-color: black;
+    width: 2.4em;
+    height: 0.3em;
+    border-radius: 10px;
+    transform-origin: 0% 50%;
+    transition: ease-in-out 0.2s;
+}
+.navigation{
+    background-color: blue;
+    position: absolute;
+    top: 7vh;
+    left: 0px;
+    width: 100vw;
+}
+
+
+
+/* .burger-open {
+    .burger-line:first-child { transform: rotate(45deg); }
+    .burger-line:nth-child(2) { opacity: 0; }
+    .burger-line:last-child { transform: rotate(-45deg); }
+  }
+.hidden{
+    display: none;
+} */

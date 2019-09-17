@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+  icon: fa fa-home
+- name: About
+  link: /about.html
+  icon: fa fa-male
+- name: Projects
+  link: /projects.html
+  icon: fa fa-cogs
+- name: Contact
+  link: /contact.html
+  icon: fa fa-envelope

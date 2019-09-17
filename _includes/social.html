@@ -1,0 +1,8 @@
+
+<ul class="social-links">
+    {% for socialitem in site.data.social}
+    <li>
+        <a href="{{socialitem.link}}"><i class="{{socialitem.icon}}"></i></a>
+    </li>
+    {% endfor %}
+</ul >
