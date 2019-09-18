@@ -1,12 +1,16 @@
 - name: Home
   link: /
   icon: fa fa-home
+  class: home
 - name: About
   link: /about.html
   icon: fa fa-male
+  class: about
 - name: Projects
   link: /projects.html
   icon: fa fa-cogs
+  class: project
 - name: Contact
   link: /contact.html
   icon: fa fa-envelope
+  class: contact

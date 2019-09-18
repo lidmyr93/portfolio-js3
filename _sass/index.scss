@@ -1,0 +1,79 @@
+
+
+/* CARD 3D styles */
+
+body {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  .card {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    background: #2d2f30;
+    border-radius: 3px;
+    background-position: top center;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 8px;
+      border-radius: 50%;
+      left: 0;
+      bottom: 0px;
+      box-shadow: 0 30px 20px rgba(0, 0, 0, .3);
+    }
+  }
+  
+  .card-content {
+    transform-style: preserve-3d;
+    text-align: center;
+  
+    h1 {
+      color: #FFF;
+      transform: translateZ(100px);
+    }
+    p, h2 {
+      color: #FFF;
+      transform: translateZ(50px);
+    }
+  }
+
+  .projects-container{
+      background-color: yellow;
+      height: 60vh;
+      width: 85%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  .projects-container-item{
+      width: 50%;
+      height: 50%;
+  }
+  .projects-container-item:nth-child(1){
+    background-color: red;
+  }
+  .projects-container-item:nth-child(2){
+    background-color: blue;
+  }
+  .projects-container-item:nth-child(3){
+    background-color: green;
+  }
+  .projects-container-item:nth-child(4){
+    background-color: pink;
+  }
