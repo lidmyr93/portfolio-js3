@@ -10,8 +10,9 @@
       <div class="menu-links">
         {% for item in site.data.nav %}
         <span class="menuItem-wrap">
-          <a href="{{item.link}}" class="menu-item"><i class="{{item.icon}}"></i></a>
+          <a href="{{item.link}}" class="menu-item"><i class="{{item.icon}}"></i>
           <span class="menuHover-anim {{item.class}}">{{item.name}}</span>
+        </a>
         </span>
         {% endfor %}
       </div>
