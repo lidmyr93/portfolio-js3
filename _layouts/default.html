@@ -19,9 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script src="/assets/js/main.js"></script>
     {% if page.js %}
-    <script src="{{page.js}}"></script>
+    <script src="{{page.js}}" defer></script>
     {% endif %}
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq-kZbqG2Ie-3uJIyYByeVJ5gYKcfpm-o&callback=initMap"
-    async defer></script>
   </body>
 </html>
