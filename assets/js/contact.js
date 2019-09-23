@@ -46,7 +46,7 @@ function initMap() {
     
     let mapOptions =  {
         center: { lat: 59.373477, lng: 17.837691 },
-        zoom: 8,
+        zoom: 4,
         disableDefaultUI: true,
         styles: [
           {
