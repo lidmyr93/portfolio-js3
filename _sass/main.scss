@@ -1,3 +1,5 @@
+@import "variables";
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +23,7 @@ body{
     justify-content: space-between;
 }
 .burger-line{
-    background-color: red;
+    background-color: $menu-links-color;
     width: 2.4em;
     height: 0.3em;
     border-radius: 10px;
@@ -52,7 +54,7 @@ body{
 }
 .menuHover-anim{
     font-size: 0.7em;
-    color: red;
+    color: #702c2c;
     font-weight: 700;
 }
 .social-links{
@@ -62,12 +64,12 @@ body{
     height: 20%;
 }
 .social-links i, .menu-links a{
-    color: red !important;
+    color: $menu-links-color !important;
     font-size: 30px;
 }
 
 .header-logo{
-    color: red;
+    color: $menu-links-color;
 }
 .burger-open {
     .burger-line:first-child { transform: rotate(45deg); }

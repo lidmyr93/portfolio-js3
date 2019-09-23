@@ -70,9 +70,7 @@ body {
       border-radius: 10px;
     }
   }
-  .transform-3D{
-    transform: translateZ(50px);
-  }
+  
   div#quad { 
     background-color: transparent; 
     font-size: 0px; 
@@ -117,6 +115,9 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+    .transform-3D{
+      transform: translateZ(10px);
     }
     div#quad { 
       display: initial;

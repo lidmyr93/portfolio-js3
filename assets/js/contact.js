@@ -48,182 +48,55 @@ function initMap() {
         center: { lat: 59.373477, lng: 17.837691 },
         zoom: 4,
         disableDefaultUI: true,
-        styles: [
+        styles:[
           {
-            featureType: "all",
-            elementType: "all",
-            stylers: [
-              {
-                color: "#ff7000"
-              },
-              {
-                lightness: "69"
-              },
-              {
-                saturation: "100"
-              },
-              {
-                weight: "1.17"
-              },
-              {
-                gamma: "2.04"
-              }
-            ]
+              "stylers": [
+                  {
+                      "visibility": "off"
+                  }
+              ]
           },
           {
-            featureType: "all",
-            elementType: "geometry",
-            stylers: [
-              {
-                color: "#cb8536"
-              }
-            ]
+              "featureType": "water",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  },
+                  {
+                      "color": "#2f343b"
+                  }
+              ]
           },
           {
-            featureType: "all",
-            elementType: "labels",
-            stylers: [
-              {
-                color: "#ffb471"
-              },
-              {
-                lightness: "66"
-              },
-              {
-                saturation: "100"
-              }
-            ]
+              "featureType": "landscape",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  },
+                  {
+                      "color": "#703030"
+                  }
+              ]
           },
           {
-            featureType: "all",
-            elementType: "labels.text.fill",
-            stylers: [
-              {
-                gamma: 0.01
-              },
-              {
-                lightness: 20
-              }
-            ]
-          },
-          {
-            featureType: "all",
-            elementType: "labels.text.stroke",
-            stylers: [
-              {
-                saturation: -31
-              },
-              {
-                lightness: -33
-              },
-              {
-                weight: 2
-              },
-              {
-                gamma: 0.8
-              }
-            ]
-          },
-          {
-            featureType: "all",
-            elementType: "labels.icon",
-            stylers: [
-              {
-                visibility: "off"
-              }
-            ]
-          },
-          {
-            featureType: "landscape",
-            elementType: "all",
-            stylers: [
-              {
-                lightness: "-8"
-              },
-              {
-                gamma: "0.98"
-              },
-              {
-                weight: "2.45"
-              },
-              {
-                saturation: "26"
-              }
-            ]
-          },
-          {
-            featureType: "landscape",
-            elementType: "geometry",
-            stylers: [
-              {
-                lightness: 30
-              },
-              {
-                saturation: 30
-              }
-            ]
-          },
-          {
-            featureType: "poi",
-            elementType: "geometry",
-            stylers: [
-              {
-                saturation: 20
-              }
-            ]
-          },
-          {
-            featureType: "poi.park",
-            elementType: "geometry",
-            stylers: [
-              {
-                lightness: 20
-              },
-              {
-                saturation: -20
-              }
-            ]
-          },
-          {
-            featureType: "road",
-            elementType: "geometry",
-            stylers: [
-              {
-                lightness: 10
-              },
-              {
-                saturation: -30
-              }
-            ]
-          },
-          {
-            featureType: "road",
-            elementType: "geometry.stroke",
-            stylers: [
-              {
-                saturation: 25
-              },
-              {
-                lightness: 25
-              }
-            ]
-          },
-          {
-            featureType: "water",
-            elementType: "all",
-            stylers: [
-              {
-                lightness: -20
-              },
-              {
-                color: "#ecc080"
-              }
-            ]
+              "featureType": "administrative",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  },
+                  {
+                      "color": "#2f343b"
+                  },
+                  {
+                      "weight": 1
+                  }
+              ]
           }
-        ]
+      ]
+      
       };
   var map = new google.maps.Map(document.getElementById("map"), mapOptions)
-  /* let myLatLng = {lat : 59.373626, lang : 17.837523} */
   let myLatLng = new google.maps.LatLng(59.373626, 17.837523);
   let marker = new google.maps.Marker({
       position: myLatLng,
