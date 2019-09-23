@@ -2,13 +2,20 @@ let app = {};
 
 const burgerMenu = document.querySelector(".burger");
 const cardAnim = document.querySelector('.card');
+const card3D = document.querySelectorAll('.transform-3D');
+const cardImg = card3D[0];
+const cardText = card3D[1];
+console.log(cardImg);
+console.log(cardText);
 burgerMenu.addEventListener("click", burgerMenuHandler);
 
 function burgerMenuHandler(e) {
   e.preventDefault();
   const dropMenu = document.querySelector(".navigation");
   dropMenu.classList.toggle('hidden');
-  /* cardAnim.classList.toggle('hide'); */
+  cardImg.classList.toggle('transform-3D')
+  cardText.classList.toggle('transform-3D')
+  
 }
 
 

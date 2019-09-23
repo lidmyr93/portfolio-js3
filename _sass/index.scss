@@ -15,9 +15,9 @@ body {
   }
   .card {
     width: 400px;
-    height: 200px;
+    height: 150px;
     position: relative;
-    background: #2d2f30;
+    background: #272829;
     border-radius: 3px;
     background-position: top center;
     transform-style: preserve-3d;
@@ -42,20 +42,40 @@ body {
   .card-content {
     transform-style: preserve-3d;
     text-align: center;
-  
-    h1 {
-      color: #FFF;
-      transform: translateZ(100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    div {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+      justify-content: space-between;
+      align-items: center;
     }
-    p, h2 {
+    h1{
+      font-size: 1.2em;
       color: #FFF;
-      transform: translateZ(50px);
+    }
+    .card-social-links a{
+      color: #fff;
+      padding: 30px;
+      font-size: 1.5em;
+    }
+    img{
+      height: 130px;
+      width: 130px;
+      color: #FFF;
+      border-radius: 10px;
     }
   }
-
+  .transform-3D{
+    transform: translateZ(50px);
+  }
   div#quad { 
-    background-color: #000; 
-    font-size: 0; 
+    background-color: transparent; 
+    font-size: 0px; 
     width: 90vw; 
     height: auto;
     margin: 0 auto;
@@ -67,9 +87,23 @@ body {
     margin: 0; 
     width: 100%; 
     height: 50%;
-    transition: 1s; 
     display: inline-block; 
     position: relative; overflow: hidden; 
+    border: 1px solid black;
+    margin-bottom: 20px; 
+    figcaption{
+      position: absolute;
+      bottom: 0px; 
+      background-color: black;
+      height: 30px;
+      width: 100%;
+      z-index: 10;
+    }
+    figcaption a{
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
   }
   div#quad figure img { width: 100%; height: 100%; }
   @media (min-width: 768px){
@@ -84,61 +118,15 @@ body {
         align-items: center;
         width: 100%;
     }
-    .card {
-      width: 400px;
-      height: 200px;
-      position: relative;
-      background: #2d2f30;
-      border-radius: 3px;
-      background-position: top center;
-      transform-style: preserve-3d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 30px 0;
-      z-index: 1;
-    
-      &:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 8px;
-        border-radius: 50%;
-        left: 0;
-        bottom: 0px;
-        box-shadow: 0 30px 20px rgba(0, 0, 0, .3);
-      }
-    }
-    
-    .card-content {
-      transform-style: preserve-3d;
-      text-align: center;
-    
-      h1 {
-        color: #FFF;
-        transform: translateZ(100px);
-      }
-      p, h2 {
-        color: #FFF;
-        transform: translateZ(50px);
-      }
-    }
-  
     div#quad { 
-      background-color: #000; 
-      font-size: 0; 
+      display: initial;
       width: 70vw; 
       height: 70vh;
-      margin: 0 auto;
-      box-shadow: 0 0 12px rgba(0,0,0,0.8);
     }
     div#quad figure { 
-      margin: 0; 
       width: 50%; 
-      height: 50%;
       transition: 1s; 
-      display: inline-block; 
-      position: relative; overflow: hidden; 
+      margin-bottom: 0;
     }
     div#quad figure:hover { cursor: pointer; z-index: 4; }
     div#quad figure img { width: 100%; height: 100%; }
@@ -148,7 +136,7 @@ body {
     div#quad figure:nth-child(4) { transform-origin: bottom right; }
     div#quad figure figcaption { 
       margin: 0; opacity: 0; 
-      background: rgba(0,0,0,0.3); 
+      background: black; 
       color: #fff; padding: .3rem; 
       font-size: 1.2rem; 
       position: absolute; 

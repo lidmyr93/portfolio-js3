@@ -12,15 +12,15 @@ js: ./assets/js/index-anim.js
   <figcaption><a href="#">Guns n Roses - Powered by Jekyll</a></figcaption>
   </figure>
   <figure>
-    <img src="../assets/images/gnr.jpg" alt="Animation Site">
-    <figcaption>Green Glass Bottle</figcaption>
+    <img src="../assets/images/winchester.jpg" alt="Animation Site">
+    <figcaption><a href="#">Animation with Anime.js</a></figcaption>
   </figure>
   <figure>
     <img src="../assets/images/madjournal.jpg" alt="MAD Journal">
-    <figcaption>Guinness Barrels, Dublin</figcaption>
+    <figcaption><a href="#">Back-end examination</a></figcaption>
   </figure>
   <figure>
     <img src="../assets/images/webbshop.jpg" alt="Webbshop">
-    <figcaption>Crystal Skull Vodka</figcaption>
+    <figcaption><a href="#">Javascript 2 examination</a></figcaption>
   </figure>
 </div>
