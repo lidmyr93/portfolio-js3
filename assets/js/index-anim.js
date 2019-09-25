@@ -18,9 +18,7 @@ function checkWindowSize() {
 }
 
   let quadimagesUtility = new Utility('#quad', 'figure');
-  
   let quadimages = quadimagesUtility.getQueryAllwithChild();
-  console.log(quadimages);
   for (i = 0; i < quadimages.length; i++) {
     quadimages[i].addEventListener("click", function() {
       this.classList.toggle("expanded");

@@ -5,7 +5,7 @@ js: ./assets/js/contact.js
 
 <div class="flex-direction-row">
 <div class="form-container">
-  <h1>Contact me directly</h1>
+  <h1 class="shimmer">Contact me directly</h1>
 <form action="#">
 		<label for="name">
 			<i class="contact-icon fa fa-user"></i>

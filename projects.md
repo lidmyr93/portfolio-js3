@@ -1,14 +1,14 @@
 ---
 title: Projects
-js: /assets/js/news.js
+js: /assets/js/projects.js
 ---
 
 
 
 <div class="projects-container">
-<h1>Projects</h1>
+<h1 class="shimmer">Projects</h1>
 <div class="image-gallery-container">
-<ul>
+<ul class="project-ul">
 {% for post in site.posts %}
   <li>
   <a href="{{post.url}}">

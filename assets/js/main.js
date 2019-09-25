@@ -11,8 +11,6 @@ function burgerMenuHandler(e) {
   e.preventDefault();
   const dropMenu = document.querySelector(".navigation");
   dropMenu.classList.toggle("hidden");
-  cardImg.classList.toggle("transform-3D");
-  cardText.classList.toggle("transform-3D");
 }
 
 const menuAnimText = document.querySelectorAll(".menuHover-anim");
