@@ -9,15 +9,15 @@ js: ./assets/js/contact.js
 <form action="#">
 		<label for="name">
 			<i class="contact-icon fa fa-user"></i>
-			<input name="name" class="form-fields" type="text">
+			<input name="name" class="form-fields" type="text" placeholder="Name">
 		</label>
 		<label for="email">
 			<i class="contact-icon fa fa-envelope"></i>
-			<input name="email" class="form-fields" type="text">
+			<input name="email" class="form-fields" type="text" placeholder="Email">
 		</label>
 		<label for="contact">
 			<i class="contact-icon fa fa-phone"></i>
-			<input name="contact" class="form-fields" type="text">
+			<input name="contact" class="form-fields" type="text" placeholder="Number">
 		</label>
 		<label for="textarea">
 			<i class="contact-icon fa fa-comment"></i>

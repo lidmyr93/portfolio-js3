@@ -62,4 +62,3 @@ Utility.prototype.getQueryAllwithChild = function(){
   return x;
 }
 
-

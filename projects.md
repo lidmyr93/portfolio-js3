@@ -3,10 +3,8 @@ title: Projects
 js: /assets/js/projects.js
 ---
 
-
-
 <div class="projects-container">
-<h1 class="shimmer">Projects</h1>
+  {% include project-svg.html %}
 <div class="image-gallery-container">
 <ul class="project-ul">
 {% for post in site.posts %}
@@ -20,5 +18,3 @@ js: /assets/js/projects.js
 </ul>
 </div>
 </div>
-
-  

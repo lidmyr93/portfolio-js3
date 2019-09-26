@@ -1,4 +1,95 @@
-.postPage-container img{
+.postPage-container {
+  width: 90vw;
+  height: auto;
+  margin-top: 20px;
+}
+
+#image-switcher {
+  width: 100%;
+  margin-bottom: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.postPage-content {
+  p {
+    color: white;
+  }
+  p:nth-child(1) {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p:nth-child(2),
+  p:nth-child(3) {
+    font-size: 1.2em;
+    margin: 0 20px 30px 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.postPage-utils {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  button {
     width: 50px;
     height: 50px;
+    border-radius: 15%;
+    border: none;
+    background: black;
+    a {
+      color: $menu-links-color;
+      text-decoration: none;
+      font-size: 2em;
+    }
+  }
+  button:hover {
+    background: $menu-links-color;
+  }
+  button:hover a {
+    color: black;
+  }
+}
+
+@media (min-width: 768px) {
+  .postPage-container {
+    width: 50vw;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 80% 20%; 
+  }
+  #image-switcher{
+      grid-column: 1 / span 2;
+  }
+  .postPage-content {
+      width: 80%;
+      margin: 0 10%;
+    p {
+      color: white;
+    }
+    p:nth-child(1) {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p:nth-child(2),
+    p:nth-child(3) {
+      font-size: 1.2em;
+      margin: 0 20px 30px 20px;
+      margin-bottom: 30px;
+    }
+  }
+  .postPage-utils {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    button{
+        margin-bottom: 5px;
+    }
+  }
 }

@@ -2,28 +2,31 @@
 layout: default
 ---
 
-{% assign URL = site.data.nav | where:"name", "News" | first %}
+{% assign URL = site.data.nav | where:"name", "Projects" | first %}
 
 <div class="postPage-container">
   <div id="image-switcher">
     <img src={{page.postimage}}>
   </div>
 
-
-
-
   <div class="postPage-content">
     {{content}}
   </div>
 
+  <div class="postPage-utils">
+    {% if page.link%}
+    <button>
+      <a href={{page.link}} target="_blank"><i class="fa fa-globe"></i></a>
+    </button>
+    {% endif %}
 
-
-
-  {% if page.link%}
-  <a href={{page.link}} target="_blank">Site</a>
-  {% endif %}
-
-  {% if page.link%}
-  <a href={{page.github}} target="_blank">Github</a>
-  {% endif %}
+    {% if page.link%}
+    <button>
+      <a href={{page.github}} target="_blank"><i class="fa fa-github"></i></a>
+    </button>
+    {% endif %}
+    <button>
+      <a href="{{URL.link}}"><i class="fa fa-undo"></i></a>
+    </button>
+  </div>
 </div>

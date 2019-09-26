@@ -6,6 +6,59 @@
   .projects-container h1 {
     text-align: center;
     margin: 30px 0;
+    color: $color-h1;
+    font-family: $font-family-h1;
+    font-weight: 300;
+  }
+  #project-logo{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #project-logo path:nth-child(1){
+    stroke-dasharray: 416.4818420410156px; 
+    stroke-dashoffset: 416.4818420410156px;
+    animation: line-anim 2s ease forwards;
+  }
+  #project-logo path:nth-child(2){
+    stroke-dasharray: 408.13055419921875px; 
+    stroke-dashoffset: 408.13055419921875px;
+    animation: line-anim 2s ease forwards 0.3s;
+  }
+  #project-logo path:nth-child(3){
+    stroke-dasharray: 412.0167236328125px; 
+    stroke-dashoffset: 412.0167236328125px;
+    animation: line-anim 2s ease forwards 0.6s;
+  }
+  #project-logo path:nth-child(4){
+    stroke-dasharray: 395.1591796875px; 
+    stroke-dashoffset: 395.1591796875px;
+    animation: line-anim 2s ease forwards 0.9s;
+  }
+  #project-logo path:nth-child(5){
+    stroke-dasharray: 434.97186279296875px; 
+    stroke-dashoffset: 434.97186279296875px;
+    animation: line-anim 2s ease forwards 1.2s;
+  }
+  #project-logo path:nth-child(6){
+    stroke-dasharray: 331.37335205078125px; 
+    stroke-dashoffset: 331.37335205078125px;
+    animation: line-anim 2s ease forwards 1.5s;
+  }
+  #project-logo path:nth-child(7){
+    stroke-dasharray: 348.0340576171875px; 
+    stroke-dashoffset: 348.0340576171875px;
+    animation: line-anim 2s ease forwards 1.8s;
+  }
+  #project-logo path:nth-child(8){
+    stroke-dasharray: 385.2763671875px; 
+    stroke-dashoffset: 385.2763671875px;
+    animation: line-anim 2s ease forwards 2.1s;
+  }
+  
+  @keyframes line-anim{
+    to{
+      stroke-dashoffset: 0;
+    }
   }
     .project-ul{
         height: 80vh;
@@ -42,6 +95,10 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+      }
+      #project-logo{
+        width: 30%;
+        margin: 0 auto;
       }
       
       .image-gallery-container {
