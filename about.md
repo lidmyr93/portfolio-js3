@@ -27,7 +27,11 @@ js: /assets/js/about.js
     </div>
 </div>
 <div class="about-text">
-<p id="text">Hej jag är en kille på 25 år. I höstas började jag min utbildning till Frontend utvecklare på Nackademin Yrkeshögskola i Solna Tillsammans med min sambo bor jag i en lägenhet i Hässelby. På fritiden umgås vi gärna med familj och vänner. Utöver det så spenderar jag mycket tid ute på sjön med mitt fiskespö. Fiske har varit en hobby för mig sedan ett par år tillbaka och jag har hittills deltagit i tre tävlingar. Som person är jag lugn och trygg, jag är väldigt driven och ser fram emot att få arbeta med frontend utveckling på heltid. Min målsättning är att bli den bästa frontend utvecklaren som jag kan bli samt att utveckla kunskaper inom backend utveckling för att bli så komplett som möjligt.</p>
+<p id="text">Hi. 
+I'm a 25 year old guy. In the fall of 2018 I started the frontend development education at Nackademin, school of business, in Solna. Together with my partner I live in an appartment in Hässelby.
+On our sparetime we prefer to hang out with family and friends. I also spend alot of time fishing. Fishing has been a hobby for me a couple of years and I have attended a few contests. 
+I'm a confident and calm person. I'm very driven and look forward to work with frontend development full time. 
+My main goal is to become the best frontend developer that I possibly could be. I also want to develop knowledge in backend development to become as complete as possible within the field. </p>
 </div>
 </div>
 

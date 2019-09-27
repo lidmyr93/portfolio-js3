@@ -69,7 +69,7 @@ body {
   font-size: 30px;
 }
 #header-logo {
-  width: 100%;
+  width: 25%;
 }
 #header-logo path:nth-child(1) {
   stroke-dasharray: 142.0735321044922px;
@@ -115,6 +115,9 @@ body {
   }
   .header-logo {
     height: 40%;
+  }
+  #header-logo{
+    width: 100%;
   }
   .navigation {
     position: initial;
